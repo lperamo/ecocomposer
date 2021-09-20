@@ -12,9 +12,9 @@ const
   TEMP_ARCHIVE_PATH = __DIR__ . '/ecocomposer.tar.gz',
   LABEL_THE_JSON_CONFIG = 'The JSON config ' . CLI_INFO_HIGHLIGHT . JSON_CONFIG_PATH . CLI_ERROR;
 
-define('MODE', $argv[ARG_MODE]);
+define('MODE', $argv[ARG_MODE] ?? 'i');
 
-if ($argv[ARG_MODE] !== 'i' && $argv[ARG_MODE] !== 'u')
+if (MODE !== 'i' && MODE !== 'u')
   exit(1);
 
 if (!file_exists(JSON_CONFIG_PATH))
