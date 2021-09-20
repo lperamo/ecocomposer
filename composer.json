@@ -1,7 +1,7 @@
 {
   "name": "ecocomposer/ecocomposer",
   "description": "EcoComposer is a frontend library that aims to generate the least possible code to make your components fully functional.",
-  "type": "library",
+  "type": "project",
   "homepage": "https://github.com/lperamo/otra",
   "license": "X11",
   "authors": [
@@ -26,6 +26,6 @@
   "scripts-descriptions": {
     "ecocomposer-install": "Installs EcoComposer.",
     "ecocomposer-manager-update" : "Updates EcoComposer manager without autoloader files and without using the cache.",
-    "ecocomposer-update" : "Update EcoComposer."
+    "ecocomposer-update" : "Updates EcoComposer."
   }
 }
