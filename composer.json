@@ -21,12 +21,11 @@
     "ecocomposer-install": "@php vendor/ecocomposer/ecocomposer/getEcoComposer.php i",
     "ecocomposer-manager-update" : "@composer update otra/otra --no-cache --no-autoloader",
     "ecocomposer-update" : "@php vendor/ecocomposer/ecocomposer/getEcoComposer.php u",
-    "post-install-cmd": "@otra-install"
+    "post-install-cmd": "@ecocomposer-install"
   },
   "scripts-descriptions": {
     "ecocomposer-install": "Installs EcoComposer.",
     "ecocomposer-manager-update" : "Updates EcoComposer manager without autoloader files and without using the cache.",
     "ecocomposer-update" : "Update EcoComposer."
   }
-
 }
