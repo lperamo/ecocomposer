@@ -1,0 +1,15 @@
+{
+  "name": "ecocomposer/ecocomposer",
+  "description": "EcoComposer is a frontend library that aims to generate the least possible code to make your components fully functional.",
+  "type": "library",
+  "license": "X11",
+  "authors": [
+    {
+      "name": "Lionel Péramo",
+      "email": "contact@lionel-peramo.com"
+    }
+  ],
+  "require": {
+    "ext-curl": "*"
+  }
+}
