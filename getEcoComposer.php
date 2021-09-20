@@ -9,7 +9,7 @@ const
   CLI_WARNING = "\e[38;2;190;190;100m",
   END_COLOR = "\e[0m",
   JSON_CONFIG_PATH = __DIR__ . '/ecoComposer.json',
-  TEMP_ARCHIVE_PATH = 'ecocomposer.tar.gz',
+  TEMP_ARCHIVE_PATH = __DIR__ . '/ecocomposer.tar.gz',
   LABEL_THE_JSON_CONFIG = 'The JSON config ' . CLI_INFO_HIGHLIGHT . JSON_CONFIG_PATH . CLI_ERROR;
 
 define('MODE', $argv[ARG_MODE]);
@@ -89,7 +89,7 @@ else
     exit(1);
   }
 
-  $filePointer = fopen(__DIR__ . '/ecocomposer.tar.gz', 'w');
+  $filePointer = fopen(TEMP_ARCHIVE_PATH, 'w');
   fwrite($filePointer, $content);
   fclose($filePointer);
 
