@@ -8,11 +8,11 @@ const
   CLI_ERROR = "\e[38;2;255;100;100m",
   CLI_INFO_HIGHLIGHT = "\e[38;2;100;200;200m",
   CLI_WARNING = "\e[38;2;190;190;100m",
-  END_COLOR = "\e[0m";
+  END_COLOR = "\e[0m",
+  TEMP_ARCHIVE_PATH = __DIR__ . '/ecocomposer.tar.gz';
 
 define('MODE', $argv[ARG_MODE] ?? 'i');
 define('JSON_CONFIG_PATH', $_SERVER['PWD'] . '/ecoComposer.json');
-define('TEMP_ARCHIVE_PATH', $_SERVER['PWD'] . '/ecocomposer.tar.gz');
 
 const LABEL_THE_JSON_CONFIG = 'The JSON config ' . CLI_INFO_HIGHLIGHT . JSON_CONFIG_PATH . CLI_ERROR;
 
@@ -100,7 +100,7 @@ else
     $phar = new PharData(TEMP_ARCHIVE_PATH);
 
     // If it is an installation, we just extract the files normally, otherwise we overwrite the existing files.
-    $phar->extractTo('.', null, MODE !== 'i');
+    $phar->extractTo(__DIR__, null, MODE !== 'i');
     unlink(TEMP_ARCHIVE_PATH);
     echo CLI_BASE, 'EcoComposer downloaded successfully', "\e[38;2;100;200;100m", ' ✔', END_COLOR, PHP_EOL;
   } catch (Exception $e)

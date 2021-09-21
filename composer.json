@@ -11,7 +11,7 @@
       "homepage": "https://lionel-peramo.com"
     }
   ],
-  "bin" : ["bin/getEcoComposer.php"],
+  "bin" : ["bin/ecocomposer.php"],
   "config": {
     "bin-dir": "bin"
   },
@@ -22,9 +22,9 @@
     "ext-json": "*"
   },
   "scripts": {
-    "ecocomposer-install": "@php vendor/ecocomposer/ecocomposer/getEcoComposer.php i",
+    "ecocomposer-install": "@php vendor/ecocomposer/ecocomposer/ecoComposer.php i",
     "ecocomposer-manager-update" : "@composer update otra/otra --no-cache --no-autoloader",
-    "ecocomposer-update" : "@php vendor/ecocomposer/ecocomposer/getEcoComposer.php u",
+    "ecocomposer-update" : "@php vendor/ecocomposer/ecocomposer/ecoComposer.php u",
     "post-install-cmd": "@ecocomposer-install"
   },
   "scripts-descriptions": {
