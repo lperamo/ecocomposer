@@ -11,6 +11,7 @@
       "homepage": "https://lionel-peramo.com"
     }
   ],
+  "bin" : ["bin/getEcoComposer.php"],
   "prefer-stable": true,
   "require": {
     "php": ">=8.0.0",
