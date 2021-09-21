@@ -12,6 +12,9 @@
     }
   ],
   "bin" : ["bin/getEcoComposer.php"],
+  "config": {
+    "bin-dir": "bin"
+  },
   "prefer-stable": true,
   "require": {
     "php": ">=8.0.0",
