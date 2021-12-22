@@ -74,7 +74,7 @@ curl_setopt_array(
     CURLOPT_POST => true,
     CURLOPT_POSTFIELDS => $jsonConfig,
     CURLOPT_RETURNTRANSFER => true,
-    CURLOPT_URL => 'https://ecocomposer.otra.tech/eco-api',
+    CURLOPT_URL => 'https://ecocomposer.dev/eco-api',
   ]
 );
 
